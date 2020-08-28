@@ -26,4 +26,9 @@ class SettingsController extends Controller
         $shippingMethods = Setting::where('key', $methodsKey)->first();
         return view('dashboard.settings.shippings.edit', compact('shippingMethods'));
     }
+
+    public function updateShippingMethods(Request $request, $id)
+    {
+        return $request;
+    }
 }
