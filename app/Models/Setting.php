@@ -12,6 +12,7 @@ class Setting extends Model
     protected $with = ['translations'];
     public $translatedAttributes = ['value'];
 
+    protected $guarded = [];
 
     public static function setMany($settings)
     {
